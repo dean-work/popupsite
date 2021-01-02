@@ -6,8 +6,20 @@ main {
 }
 
 button {
-    margin: 15%;
+    display: flexbox;
+    opacity: 70&;
     background-color: yellow;
     border: 15px solid red;
     grid-area: 2 / 2 / 3 / 3;
+}
+
+button:hover{
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+#indihome_theme {
+    z-index: -5;
+    height: 100%;
+    width: 100%;
+    grid-area: 2 / 1 / 4 / 3;
 }
