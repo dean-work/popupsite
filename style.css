@@ -3,11 +3,12 @@ main {
     grid-template: repeat(3, 1fr) / repeat(3, 1fr);
     height: 100vh;
     bottom: 0;
+    justify-content:flex-start;
 }
 
 button {
     display: flexbox;
-    opacity: 70&;
+    opacity: 50%;
     background-color: yellow;
     border: 15px solid red;
     grid-area: 2 / 2 / 3 / 3;
@@ -19,7 +20,19 @@ button:hover{
 
 #indihome_theme {
     z-index: -5;
+    margin: auto 0;
     height: 100%;
-    width: 100%;
     grid-area: 2 / 1 / 4 / 3;
+    animation: 2s ease-out 0s 1 slideIn;
 }
+
+@keyframes slideIn{
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transformX: translateX(0%);
+    }
+}
+
+
